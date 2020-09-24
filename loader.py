@@ -32,7 +32,7 @@ Bit_Compression = 0   # 0 (don't compress), 1, ..., N bits
 
 Number_samples  = 100 # From the 10K test set, 1, ..., 10000
 
-Noise_percentage_start = 2
+Noise_percentage_start = 0
 Noise_percentage_step = 5 # 5% to 5% increase
 Noise_percentage_stop = 100
 
