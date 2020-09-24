@@ -36,6 +36,8 @@ Noise_percentage_start = 0
 Noise_percentage_step = 5 # 5% to 5% increase
 Noise_percentage_stop = 100
 
+Show_image = False # True or False
+
 # detect the current working directory and print it
 working_directory = os.getcwd()
 print ("The current working directory is %s" % working_directory)
@@ -51,8 +53,9 @@ for Noise_Amplitude in np.arange(start=Noise_percentage_start, stop=Noise_percen
         Data_Raw, Label = Loader(PatternID, Noise_Amplitude/100, Bit_Compression, working_directory)
         print(Label)
 
-        plt.imshow(Data_Raw)
-        plt.show()
+        if Show_image:
+            plt.imshow(Data_Raw)
+            plt.show()
 
         file_name = path + "/in" + str(PatternID) + ".bin"
 
