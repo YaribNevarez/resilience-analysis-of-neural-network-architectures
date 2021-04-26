@@ -1,2 +1,1 @@
-# noisy-mnist
-Uniformly distributed additive noise on MNIST data set
+# Error resilience analysis of neural network architectures.
