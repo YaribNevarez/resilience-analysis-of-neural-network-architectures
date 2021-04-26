@@ -1,1 +1,1 @@
-# Error resilience analysis of neural network architectures.
+# Resilience analysis of neural network architectures for energy-efficient computational performance.
